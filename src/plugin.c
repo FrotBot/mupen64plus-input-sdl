@@ -675,8 +675,8 @@ EXPORT void CALL GetKeys( int Control, BUTTONS *Keys )
             /* the mouse x/y values decay exponentially (returns to center), unless the left "Windows" key is held down */
             if (!myKeyState[SDL_SCANCODE_LGUI])
             {
-                mousex_residual =  (mousex_residual * 120) / 256;
-                mousey_residual =  (mousey_residual * 120) / 256;
+                mousex_residual =  (mousex_residual * 150) / 256;
+                mousey_residual =  (mousey_residual * 150) / 256;
             }
         }
         else
